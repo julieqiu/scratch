@@ -30,14 +30,14 @@ body:
   - type: input
     id: introduced
     attributes:
-      label: Introduced version
+      label: Introduced Version(s)
       description: What version was the vulnerabiltiy introduced?
     validations:
       required: false
   - type: input
     id: fixed
     attributes:
-      label: Fixed version
+      label: Fixed Version(s)
       description: What version was the vulnerabiltiy fixed?
     validations:
       required: false
