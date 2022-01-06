@@ -27,14 +27,14 @@ body:
       description: Describe the Go vulnerability.
     validations:
       required: true
-  - type: description
+  - type: input
     id: introduced
     attributes:
       label: introduced
       description: What version was the vulnerabiltiy introduced?
     validations:
       required: false
-  - type: description
+  - type: input
     id: fixed
     attributes:
       label: fixed
