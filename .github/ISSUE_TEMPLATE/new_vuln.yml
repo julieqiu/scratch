@@ -1,5 +1,5 @@
 name: New vulnerability for database
-description:
+description: File a new vulnerability.
 title: "x/vulndb: potential Go vuln in <package name>"
 body:
   - type: markdown
