@@ -16,42 +16,42 @@ body:
   - type: input
     id: package
     attributes:
-      label: package
+      label: Package
       description: What is the package containing this vulnerability?
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: description
+      label: Description
       description: Describe the Go vulnerability.
     validations:
       required: true
   - type: input
     id: introduced
     attributes:
-      label: introduced
+      label: Introduced version
       description: What version was the vulnerabiltiy introduced?
     validations:
       required: false
   - type: input
     id: fixed
     attributes:
-      label: fixed
+      label: Fixed version
       description: What version was the vulnerabiltiy fixed?
     validations:
       required: false
   - type: input
     id: cve
     attributes:
-      label: cve
+      label: CVE
       description: If there is an existing CVE ID, type it below.
     validations:
       required: false
   - type: input
     id: commit
     attributes:
-      label: commit
+      label: Commit
       description: |
         Include the commit where this vulnerability was fixed.
 
@@ -62,7 +62,7 @@ body:
   - type: input
     id: pr
     attributes:
-      label: pr
+      label: PR
       description: |
         Include the PR where this vulnerability was fixed.
 
@@ -73,29 +73,27 @@ body:
   - type: textarea
     id: references
     attributes:
-      label: references
-      description: Include additional relevant URLs for this vulnerability.
+      label: Additional References
+      description: Additional references for this vulnerability.
+      placeholder: |
+       Please include one reference/URL per line. For example,
+       https://example.com/my/package/another/commit
+       https://example.com/my/package/fix/announcement/email
     validations:
       required: false
   - type: textarea
     id: symbols
     attributes:
-      label: symbols
+      label: Symbols
       description: Include package symbols affected by this vulnerability.
+      placeholder: |
+       Please include one symbol per line.
     validations:
       required: true
   - type: input
     id: credit
     attributes:
-      label: credit
+      label: Credit
       description: How would you like to be credited for this report?
     validations:
       required: false
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://go.dev/conduct)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
