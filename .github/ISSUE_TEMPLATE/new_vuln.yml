@@ -87,7 +87,9 @@ body:
       label: Symbols
       description: Include package symbols affected by this vulnerability.
       placeholder: |
-       Please include one symbol per line.
+       Please include one symbol per line. For example,
+       NewSymbol
+       anotherSymbol
     validations:
       required: true
   - type: input
