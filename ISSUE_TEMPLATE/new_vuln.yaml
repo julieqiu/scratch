@@ -1,0 +1,101 @@
+name: New vulnerability for database
+description:
+title: "x/vulndb: potential Go vuln in <package name>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a Go vulnerability!
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      description: What is the module containing this vulnerability?
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: package
+      description: What is the package containing this vulnerability?
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: description
+      description: Describe the Go vulnerability.
+    validations:
+      required: true
+  - type: description
+    id: introduced
+    attributes:
+      label: introduced
+      description: What version was the vulnerabiltiy introduced?
+    validations:
+      required: false
+  - type: description
+    id: fixed
+    attributes:
+      label: fixed
+      description: What version was the vulnerabiltiy fixed?
+    validations:
+      required: false
+  - type: input
+    id: cve
+    attributes:
+      label: cve
+      description: If there is an existing CVE ID, type it below.
+    validations:
+      required: false
+  - type: input
+    id: commit
+    attributes:
+      label: commit
+      description: |
+        Include the commit where this vulnerability was fixed.
+
+        If more than one commit is relevant, put the latest one here, and
+        include the other under additional references.
+    validations:
+      required: false
+  - type: input
+    id: pr
+    attributes:
+      label: pr
+      description: |
+        Include the PR where this vulnerability was fixed.
+
+        If more than one PR is relevant, put the latest one here, and
+        include the other under additional references.
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: references
+      description: Include additional relevant URLs for this vulnerability.
+    validations:
+      required: false
+  - type: textarea
+    id: symbols
+    attributes:
+      label: symbols
+      description: Include package symbols affected by this vulnerability.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: credit
+      description: How would you like to be credited for this report?
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://go.dev/conduct)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
