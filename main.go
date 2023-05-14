@@ -18,28 +18,23 @@ func save(title string, body []byte) error {
 	return os.WriteFile(filename, body, 0600)
 }
 
-func loadPage(title string) (*Page, error) {
+func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
 	filename := title + ".txt"
 	body, err := os.ReadFile(filename)
-	if err != nil {
-		return nil, err
-	}
-	return &Page{Title: title, Body: template.HTML(body)}, nil
-}
-
-func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
-	p, err := loadPage(title)
 	if err != nil {
 		http.Redirect(w, r, "/edit/"+title, http.StatusFound)
 		return
 	}
+	p := &Page{Title: title, Body: template.HTML(body)}
 	renderTemplate(w, "view", p)
 }
 
 func editHandler(w http.ResponseWriter, r *http.Request, title string) {
-	p, err := loadPage(title)
-	if err != nil {
-		p = &Page{Title: title}
+	filename := title + ".txt"
+	p := &Page{Title: title}
+	body, err := os.ReadFile(filename)
+	if err == nil {
+		p.Body = template.HTML(body)
 	}
 	renderTemplate(w, "edit", p)
 }
