@@ -1,11 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
 	"os"
 	"regexp"
+
+	"github.com/microcosm-cc/bluemonday"
 )
 
 type Page struct {
@@ -19,14 +22,24 @@ func save(title string, body []byte) error {
 }
 
 func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
-	filename := title + ".txt"
-	body, err := os.ReadFile(filename)
-	if err != nil {
-		http.Redirect(w, r, "/edit/"+title, http.StatusFound)
-		return
-	}
-	p := &Page{Title: title, Body: template.HTML(body)}
-	renderTemplate(w, "view", p)
+	/*
+		filename := title + ".txt"
+		 body, err := os.ReadFile(filename)
+		if err != nil {
+			http.Redirect(w, r, "/edit/"+title, http.StatusFound)
+			return
+		}
+	*/
+
+	p := bluemonday.NewPolicy()
+
+	untrusted := "<scr\u0130pt>&lt;script&gt;alert(document.domain)&lt;/script&gt;"
+	fmt.Printf("Raw: %s\n", untrusted)
+	sanitized := p.Sanitize(untrusted)
+	fmt.Printf("Sanitized: %s\n", sanitized)
+
+	page := &Page{Title: title, Body: template.HTML(sanitized)}
+	renderTemplate(w, "view", page)
 }
 
 func editHandler(w http.ResponseWriter, r *http.Request, title string) {
