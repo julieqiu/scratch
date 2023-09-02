@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package book;
+
+import "annotations.proto";
+import "resource.proto";
+
+option go_package = "github.com/julieqiu/udemy-grpc/book/proto";
+
+service BookService {
+  rpc GetBook (GetBookRequest) returns (Book) {
+    option (google.api.http) = {
+      get: "/v1/{name=books/*}"
+    };
+  }
+}
+
+message GetBookRequest {
+  string name = 1 [(google.api.resource_reference).type = "library.googleapis.com/Book"];
+}
+
+message Book {
+  option (google.api.resource) = {
+    type: "library.googleapis.com/Book"
+    pattern: "books/{book}"
+  };
+
+  string name = 1;
+}
