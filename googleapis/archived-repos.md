@@ -1,6 +1,5 @@
 1. https://github.com/googleapis/api-client-staging
   - public, archived: 2021-03-22T20:06:21Z
-
 1. https://github.com/googleapis/api-common-java
   - This library has moved to https://github.com/googleapis/sdk-platform-java/tree/main/api-common-java.
   - public, archived: 2023-07-18T19:08:32Z
