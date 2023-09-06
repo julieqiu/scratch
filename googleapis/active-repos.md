@@ -1,35 +1,38 @@
 # GAPIC generators
-1. https://github.com/googleapis/gapic-generator-csharp
-1. https://github.com/googleapis/gapic-generator-go	Generate Go API client libraries from Protocol Buffers.
-1. https://github.com/googleapis/gapic-generator-kotlin	Generate Kotlin gRPC client libraries from Protocol Buffer definitions.
-1. https://github.com/googleapis/gapic-generator-php
-1. https://github.com/googleapis/gapic-generator-python	Generate Python API client libraries from Protocol Buffers.
-1. https://github.com/googleapis/gapic-generator-ruby	Generate Ruby gRPC client libraries from Protocol Buffer definitions.
-1. https://github.com/googleapis/gapic-generator-typescript	Generate Typescript API client libraries from Protocol Buffers.
+1. C#: https://github.com/googleapis/gapic-generator-csharp
+1. C++: ?
+1. Go: https://github.com/googleapis/gapic-generator-go	Generate Go API client libraries from Protocol Buffers.
+1. Java: ?
+1. Node: https://github.com/googleapis/gapic-generator-typescript	Generate Typescript API client libraries from Protocol Buffers.
+1. PHP: https://github.com/googleapis/gapic-generator-php
+1. Python: https://github.com/googleapis/gapic-generator-python	Generate Python API client libraries from Protocol Buffers.
+1. Ruby: https://github.com/googleapis/gapic-generator-ruby	Generate Ruby gRPC client libraries from Protocol Buffer definitions.
+1. \*Kotlin: https://github.com/googleapis/gapic-generator-kotlin	Generate Kotlin gRPC client libraries from Protocol Buffer definitions.
 
 # GAPIC libraries
-1. https://github.com/googleapis/google-cloud-cpp	C++ Client Libraries for Google Cloud Services
-1. https://github.com/googleapis/google-cloud-dotnet	Google Cloud Client Libraries for .NET
-1. https://github.com/googleapis/google-cloud-go	Google Cloud Client Libraries for Go.
-1. https://github.com/googleapis/google-cloud-java	Google Cloud Client Library for Java
-1. https://github.com/googleapis/google-cloud-node	Google Cloud Client Library for Node.js
-1. https://github.com/googleapis/google-cloud-php	Google Cloud Client Library for PHP
-1. https://github.com/googleapis/google-cloud-python	Google Cloud Client Library for Python
-1. https://github.com/googleapis/google-cloud-ruby	Google Cloud Client Library for Ruby
-1. https://github.com/googleapis/google-cloud-rust
+1. C#: https://github.com/googleapis/google-cloud-dotnet	Google Cloud Client Libraries for .NET
+1. C++: https://github.com/googleapis/google-cloud-cpp	C++ Client Libraries for Google Cloud Services
+1. Go: https://github.com/googleapis/google-cloud-go	Google Cloud Client Libraries for Go.
+1. Java: https://github.com/googleapis/google-cloud-java	Google Cloud Client Library for Java
+1. Node: https://github.com/googleapis/google-cloud-node	Google Cloud Client Library for Node.js
+1. PHP: https://github.com/googleapis/google-cloud-php	Google Cloud Client Library for PHP
+1. Python: https://github.com/googleapis/google-cloud-python	Google Cloud Client Library for Python
+1. Ruby: https://github.com/googleapis/google-cloud-ruby	Google Cloud Client Library for Ruby
+1. \*Rust: https://github.com/googleapis/google-cloud-rust
 
 # APIARY libraries
 
-1. https://github.com/googleapis/google-api-dotnet-client	Google APIs Client Library for .NET
-1. https://github.com/googleapis/google-api-go-client	Auto-generated Google APIs for Go.
-1. https://github.com/googleapis/google-api-java-client	Google APIs Client Library for Java
-1. https://github.com/googleapis/google-api-java-client-services	Generated Java code for Google APIs
-1. https://github.com/googleapis/google-api-nodejs-client	Google's officially supported Node.js client library for accessing Google APIs. Support for authorization and authentication with OAuth 2.0, API Keys and JWT (Service Tokens) is included.
-1. https://github.com/googleapis/google-api-php-client	A PHP client library for accessing Google APIs
-1. https://github.com/googleapis/google-api-php-client-services
-1. https://github.com/googleapis/google-api-python-client	🐍 The official Python client library for Google's discovery based APIs.
-1. https://github.com/googleapis/google-api-ruby-client	REST client for Google APIs
-1. https://github.com/googleapis/google-api-swift-client	A client generator for APIs described by Google's API Discovery Format.
+1. C#: https://github.com/googleapis/google-api-dotnet-client	Google APIs Client Library for .NET
+1. C++: ?
+1. Go: https://github.com/googleapis/google-api-go-client	Auto-generated Google APIs for Go.
+1. Java: https://github.com/googleapis/google-api-java-client	Google APIs Client Library for Java
+1. Java: https://github.com/googleapis/google-api-java-client-services	Generated Java code for Google APIs
+1. Node: https://github.com/googleapis/google-api-nodejs-client	Google's officially supported Node.js client library for accessing Google APIs. Support for authorization and authentication with OAuth 2.0, API Keys and JWT (Service Tokens) is included.
+1. PHP: https://github.com/googleapis/google-api-php-client	A PHP client library for accessing Google APIs
+1. PHP: https://github.com/googleapis/google-api-php-client-services
+1. Python: https://github.com/googleapis/google-api-python-client	🐍 The official Python client library for Google's discovery based APIs.
+1. Ruby: https://github.com/googleapis/google-api-ruby-client	REST client for Google APIs
+1. \*Swift: https://github.com/googleapis/google-api-swift-client	A client generator for APIs described by Google's API Discovery Format.
 
 # Auth Libraries
 
