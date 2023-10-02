@@ -2,7 +2,7 @@
 1. C#: https://github.com/googleapis/gapic-generator-csharp
 1. C++: ?
 1. Go: https://github.com/googleapis/gapic-generator-go	Generate Go API client libraries from Protocol Buffers.
-1. Java: ?
+1. Java: https://github.com/googleapis/sdk-platform-java Tooling and shared libraries for Cloud SDK for Java (why naming)
 1. Node: https://github.com/googleapis/gapic-generator-typescript	Generate Typescript API client libraries from Protocol Buffers.
 1. PHP: https://github.com/googleapis/gapic-generator-php
 1. Python: https://github.com/googleapis/gapic-generator-python	Generate Python API client libraries from Protocol Buffers.
